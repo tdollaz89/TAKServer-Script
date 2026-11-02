@@ -1,22 +1,13 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+# TAK installers: too big for GitHub (650 MB each) and distributed only through tak.gov
+installers/*
+!installers/README.txt
+
+# Build output: contains private keys and certificates
+output/*
+!output/.keep
+
+# Your own per-server configs may contain IPs and passwords; examples stay tracked
+config/*.conf
+!config/default.conf
+
+.DS_Store
